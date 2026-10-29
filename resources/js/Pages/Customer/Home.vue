@@ -326,7 +326,7 @@
                     <!-- Photo lookbook -->
                     <div class="aspect-4/3 rounded-lg overflow-hidden border border-border-soft relative group bg-gray-light">
                         <img 
-                            :src="'/images/banner_promo_1.png'" 
+                            :src="'/images/banner_promo.jpg'" 
                             alt="Elvara Studio Kampanye" 
                             class="w-full h-full object-cover select-none transition-transform duration-700 group-hover:scale-102"
                         />

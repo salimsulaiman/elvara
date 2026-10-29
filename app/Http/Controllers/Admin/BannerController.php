@@ -42,7 +42,7 @@ class BannerController extends Controller
         ]);
 
         try {
-            $path = '/' . $request->file('image_path')->store('images', 'public');
+            $path = '/storage/' . $request->file('image_path')->store('images', 'public');
 
             Banner::create([
                 'title' => $request->title,
@@ -89,7 +89,7 @@ class BannerController extends Controller
                 }
                 
                 // Store new image
-                $data['image_path'] = '/' . $request->file('image_path')->store('images', 'public');
+                $data['image_path'] = '/storage/' . $request->file('image_path')->store('images', 'public');
             }
 
             $banner->update($data);
